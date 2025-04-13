@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pabitra Bhatta - Aspiring Civil Engineer & Web Developer">
+  <meta name="keywords" content="Civil Engineering, Web Development, AI, Portfolio">
+  <title>Pabitra Bhatta - Skills</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Pabitra Bhatta</h1>
+    <p>Aspiring Civil Engineer & Web Developer | Innovating with AI and Design</p>
+    <select id="language-switcher">
+      <option value="en">English</option>
+      <option value="ne">Nepali</option>
+      <option value="hi">Hindi</option>
+    </select>
+    <button id="theme-toggle" aria-label="Toggle theme">Dark Mode🌙</button>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>My Skills</h2>
+
+    <h3>Technical Skills</h3>
+    <div class="circle-skill">
+      <div class="circle-container" data-percent="75">
+        <svg width="200" height="200">
+          <circle class="circle-bg" cx="100" cy="100" r="80"></circle>
+          <circle class="circle-progress" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="skill-label">
+          <i class="fas fa-drafting-compass"></i>
+          <span>AutoCAD</span>
+        </div>
+      </div>
+      <div class="circle-container" data-percent="70">
+        <svg width="200" height="200">
+          <circle class="circle-bg" cx="100" cy="100" r="80"></circle>
+          <circle class="circle-progress" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="skill-label">
+          <i class="fas fa-calculator"></i>
+          <span>Estimating</span>
+        </div>
+      </div>
+      <div class="circle-container" data-percent="65">
+        <svg width="200" height="200">
+          <circle class="circle-bg" cx="100" cy="100" r="80"></circle>
+          <circle class="circle-progress" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="skill-label">
+          <i class="fas fa-map"></i>
+          <span>Surveying</span>
+        </div>
+      </div>
+    </div>
+
+    <h3>Coding Skills</h3>
+    <div class="circle-skill">
+      <div class="circle-container" data-percent="80">
+        <svg width="200" height="200">
+          <circle class="circle-bg" cx="100" cy="100" r="80"></circle>
+          <circle class="circle-progress" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="skill-label">
+          <i class="fas fa-code"></i>
+          <span>HTML</span>
+        </div>
+      </div>
+      <div class="circle-container" data-percent="70">
+        <svg width="200" height="200">
+          <circle class="circle-bg" cx="100" cy="100" r="80"></circle>
+          <circle class="circle-progress" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="skill-label">
+          <i class="fas fa-paint-brush"></i>
+          <span>CSS</span>
+        </div>
+      </div>
+    </div>
+
+    <h3>Practical Life Skills</h3>
+    <div class="circle-skill">
+      <div class="circle-container" data-percent="85">
+        <svg width="200" height="200">
+          <circle class="circle-bg" cx="100" cy="100" r="80"></circle>
+          <circle class="circle-progress" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="skill-label">
+          <i class="fas fa-comments"></i>
+          <span>Communication</span>
+        </div>
+      </div>
+      <div class="circle-container" data-percent="80">
+        <svg width="200" height="200">
+          <circle class="circle-bg" cx="100" cy="100" r="80"></circle>
+          <circle class="circle-progress" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="skill-label">
+          <i class="fas fa-lightbulb"></i>
+          <span>Problem-Solving</span>
+        </div>
+      </div>
+      <div class="circle-container" data-percent="90">
+        <svg width="200" height="200">
+          <circle class="circle-bg" cx="100" cy="100" r="80"></circle>
+          <circle class="circle-progress" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="skill-label">
+          <i class="fas fa-hammer"></i>
+          <span>Hardworking</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Pabitra Bhatta</p>
+  </footer>
+
+  <!-- Scroll-to-Top -->
+  <button id="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
