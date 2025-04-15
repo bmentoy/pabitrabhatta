@@ -5,42 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Pabitra Bhatta - Aspiring Civil Engineer & Web Developer">
   <meta name="keywords" content="Civil Engineering, Web Development, AI, Portfolio">
-  <title>Pabitra Bhatta - Skills</title>
+  <title data-i18n="title-skills">Pabitra Bhatta - Skills</title>
   <link rel="icon" type="image/jpeg" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header Section -->
   <header>
-    <h1>Pabitra Bhatta</h1>
-    <p>Aspiring Civil Engineer & Web Developer | Innovating with AI and Design</p>
+    <h1 data-i18n="header-name">Pabitra Bhatta</h1>
+    <p data-i18n="header-subtitle">Aspiring Civil Engineer & Web Developer | Innovating with AI and Design</p>
     <select id="language-switcher">
-      <option value="en">English</option>
-      <option value="ne">Nepali</option>
-      <option value="hi">Hindi</option>
+      <option value="en" data-i18n="lang-en">English</option>
+      <option value="ne" data-i18n="lang-ne">Nepali</option>
+      <option value="hi" data-i18n="lang-hi">Hindi</option>
     </select>
-    <button id="theme-toggle" aria-label="Toggle theme">Dark Mode🌙</button>
+    <button id="theme-toggle" data-i18n="theme-dark">Dark Mode🌙</button>
   </header>
 
   <!-- Navigation Bar -->
   <nav>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <ul id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav-about">About</a></li>
+      <li><a href="education.html" data-i18n="nav-education">Education</a></li>
+      <li><a href="skills.html" data-i18n="nav-skills">Skills</a></li>
+      <li><a href="projects.html" data-i18n="nav-projects">Projects</a></li>
+      <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Skills Section -->
   <section class="skills">
-    <h2>My Skills</h2>
+    <h2 data-i18n="skills-title">My Skills</h2>
 
-    <h3>Technical Skills</h3>
+    <h3 data-i18n="skills-technical-title">Technical Skills</h3>
     <div class="circle-skill">
       <div class="circle-container" data-percent="75">
         <svg width="200" height="200">
@@ -49,7 +54,7 @@
         </svg>
         <div class="skill-label">
           <i class="fas fa-drafting-compass"></i>
-          <span>AutoCAD</span>
+          <span data-i18n="skill-autocad">AutoCAD</span>
         </div>
       </div>
       <div class="circle-container" data-percent="70">
@@ -59,7 +64,7 @@
         </svg>
         <div class="skill-label">
           <i class="fas fa-calculator"></i>
-          <span>Estimating</span>
+          <span data-i18n="skill-estimating">Estimating</span>
         </div>
       </div>
       <div class="circle-container" data-percent="65">
@@ -69,12 +74,12 @@
         </svg>
         <div class="skill-label">
           <i class="fas fa-map"></i>
-          <span>Surveying</span>
+          <span data-i18n="skill-surveying">Surveying</span>
         </div>
       </div>
     </div>
 
-    <h3>Coding Skills</h3>
+    <h3 data-i18n="skills-coding-title">Coding Skills</h3>
     <div class="circle-skill">
       <div class="circle-container" data-percent="80">
         <svg width="200" height="200">
@@ -83,7 +88,7 @@
         </svg>
         <div class="skill-label">
           <i class="fas fa-code"></i>
-          <span>HTML</span>
+          <span data-i18n="skill-html">HTML</span>
         </div>
       </div>
       <div class="circle-container" data-percent="70">
@@ -93,12 +98,12 @@
         </svg>
         <div class="skill-label">
           <i class="fas fa-paint-brush"></i>
-          <span>CSS</span>
+          <span data-i18n="skill-css">CSS</span>
         </div>
       </div>
     </div>
 
-    <h3>Practical Life Skills</h3>
+    <h3 data-i18n="skills-life-title">Practical Life Skills</h3>
     <div class="circle-skill">
       <div class="circle-container" data-percent="85">
         <svg width="200" height="200">
@@ -107,7 +112,7 @@
         </svg>
         <div class="skill-label">
           <i class="fas fa-comments"></i>
-          <span>Communication</span>
+          <span data-i18n="skill-communication">Communication</span>
         </div>
       </div>
       <div class="circle-container" data-percent="80">
@@ -117,7 +122,7 @@
         </svg>
         <div class="skill-label">
           <i class="fas fa-lightbulb"></i>
-          <span>Problem-Solving</span>
+          <span data-i18n="skill-problem-solving">Problem-Solving</span>
         </div>
       </div>
       <div class="circle-container" data-percent="90">
@@ -127,7 +132,7 @@
         </svg>
         <div class="skill-label">
           <i class="fas fa-hammer"></i>
-          <span>Hardworking</span>
+          <span data-i18n="skill-hardworking">Hardworking</span>
         </div>
       </div>
     </div>
@@ -135,7 +140,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Pabitra Bhatta</p>
+    <p data-i18n="footer-copyright">© 2025 Pabitra Bhatta</p>
   </footer>
 
   <!-- Scroll-to-Top -->
