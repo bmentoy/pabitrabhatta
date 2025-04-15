@@ -5,89 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Pabitra Bhatta - Aspiring Civil Engineer & Web Developer">
   <meta name="keywords" content="Civil Engineering, Web Development, AI, Portfolio">
-  <title>Pabitra Bhatta - About</title>
+  <title data-i18n="title-about">Pabitra Bhatta - About</title>
   <link rel="icon" type="image/jpeg" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header Section -->
   <header>
-    <h1>Pabitra Bhatta</h1>
-    <p>Aspiring Civil Engineer & Web Developer | Innovating with AI and Design</p>
+    <h1 data-i18n="header-name">Pabitra Bhatta</h1>
+    <p data-i18n="header-subtitle">Aspiring Civil Engineer & Web Developer | Innovating with AI and Design</p>
     <select id="language-switcher">
-      <option value="en">English</option>
-      <option value="ne">Nepali</option>
-      <option value="hi">Hindi</option>
+      <option value="en" data-i18n="lang-en">English</option>
+      <option value="ne" data-i18n="lang-ne">Nepali</option>
+      <option value="hi" data-i18n="lang-hi">Hindi</option>
     </select>
-    <button id="theme-toggle" aria-label="Toggle theme">Dark Mode🌙</button>
+    <button id="theme-toggle" data-i18n="theme-dark">Dark Mode🌙</button>
   </header>
 
   <!-- Navigation Bar -->
   <nav>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <ul id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav-about">About</a></li>
+      <li><a href="education.html" data-i18n="nav-education">Education</a></li>
+      <li><a href="skills.html" data-i18n="nav-skills">Skills</a></li>
+      <li><a href="projects.html" data-i18n="nav-projects">Projects</a></li>
+      <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
     </ul>
   </nav>
 
   <section class="about">
-    <h2>About Me</h2>
+    <h2 data-i18n="about-title">About Me</h2>
     <div class="about-hero">
       <div class="about-hero-image">
         <img src="images/IMG-20240401-WA0005.jpg" alt="Pabitra Bhatta" loading="lazy">
       </div>
       <div class="about-bio">
-        <h3>Who I Am</h3>
-        <p>I’m Pabitra Bhatta, a civil engineering student with a passion for building bridges—both literal and digital. From designing sturdy foundations to coding interactive websites, I thrive on blending structure with creativity.</p>
-        <a href="files/Pabitra Bhatta's Resume.pdf" download class="cta-button" aria-label="Download resume">Download Resume</a>
+        <h3 data-i18n="about-who-title">Who I Am</h3>
+        <p data-i18n="about-who-text">I’m Pabitra Bhatta, a civil engineering student with a passion for building bridges—both literal and digital. From designing sturdy foundations to coding interactive websites, I thrive on blending structure with creativity.</p>
+        <a href="files/Pabitra Bhatta's Resume.pdf" download class="cta-button" data-i18n="about-resume">Download Resume</a>
       </div>
     </div>
-    <h3>My Interests</h3>
+    <h3 data-i18n="about-interests-title">My Interests</h3>
     <div class="interests-grid">
       <div class="interest-card animate">
         <i class="fas fa-building"></i>
-        <p>Structural Design</p>
+        <p data-i18n="interest-structural">Structural Design</p>
       </div>
       <div class="interest-card animate">
         <i class="fas fa-code"></i>
-        <p>Web Development</p>
+        <p data-i18n="interest-web">Web Development</p>
       </div>
       <div class="interest-card animate">
         <i class="fas fa-motorcycle"></i>
-        <p>Motorcycle Touring</p>
+        <p data-i18n="interest-motorcycle">Motorcycle Touring</p>
       </div>
       <div class="interest-card animate">
         <i class="fas fa-film"></i>
-        <p>Spy Thrillers</p>
+        <p data-i18n="interest-spy">Spy Thrillers</p>
       </div>
     </div>
-    <h3>My Journey</h3>
+    <h3 data-i18n="about-journey-title">My Journey</h3>
     <div class="timeline">
       <div class="timeline-item animate">
         <i class="fas fa-graduation-cap timeline-icon"></i>
-        <p>2019: Began Civil Engineering Studies</p>
+        <p data-i18n="journey-2019">2019: Began Civil Engineering Studies</p>
       </div>
       <div class="timeline-item animate">
         <i class="fas fa-briefcase timeline-icon"></i>
-        <p>2024: Interned at Ace Engineering</p>
+        <p data-i18n="journey-2024">2024: Interned at Ace Engineering</p>
       </div>
       <div class="timeline-item animate">
         <i class="fas fa-laptop-code timeline-icon"></i>
-        <p>2025: Launched AI-Enhanced Portfolio</p>
+        <p data-i18n="journey-2025">2025: Launched AI-Enhanced Portfolio</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Pabitra Bhatta</p>
+    <p data-i18n="footer-copyright">© 2025 Pabitra Bhatta</p>
   </footer>
 
   <!-- Scroll-to-Top -->
