@@ -5,68 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Pabitra Bhatta - Aspiring Civil Engineer & Web Developer">
   <meta name="keywords" content="Civil Engineering, Web Development, AI, Portfolio">
-  <title>Pabitra Bhatta - Projects</title>
+  <title data-i18n="title-projects">Pabitra Bhatta - Projects</title>
   <link rel="icon" type="image/jpeg" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Header Section -->
   <header>
-    <h1>Pabitra Bhatta</h1>
-    <p>Aspiring Civil Engineer & Web Developer | Innovating with AI and Design</p>
+    <h1 data-i18n="header-name">Pabitra Bhatta</h1>
+    <p data-i18n="header-subtitle">Aspiring Civil Engineer & Web Developer | Innovating with AI and Design</p>
     <select id="language-switcher">
-      <option value="en">English</option>
-      <option value="ne">Nepali</option>
-      <option value="hi">Hindi</option>
+      <option value="en" data-i18n="lang-en">English</option>
+      <option value="ne" data-i18n="lang-ne">Nepali</option>
+      <option value="hi" data-i18n="lang-hi">Hindi</option>
     </select>
-    <button id="theme-toggle" aria-label="Toggle theme">Dark Mode🌙</button>
+    <button id="theme-toggle" data-i18n="theme-dark">Dark Mode🌙</button>
   </header>
 
   <!-- Navigation Bar -->
   <nav>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <ul id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav-about">About</a></li>
+      <li><a href="education.html" data-i18n="nav-education">Education</a></li>
+      <li><a href="skills.html" data-i18n="nav-skills">Skills</a></li>
+      <li><a href="projects.html" data-i18n="nav-projects">Projects</a></li>
+      <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Projects Section -->
   <section class="projects">
-    <h2>My Projects</h2>
+    <h2 data-i18n="projects-title">My Projects</h2>
     <div class="project-card" onclick="openModal('aroma-modal')">
-      <h3>Aroma Free Movie Website</h3>
+      <h3 data-i18n="project-aroma-title">Aroma Free Movie Website</h3>
       <div class="project-image">
         <img src="images/Aroma Free Movies Screenshot.png" alt="Aroma Free Movie Screenshot" loading="lazy">
       </div>
-      <p>A free movie streaming website built using <b>HTML, CSS, and JavaScript</b>. Now integrating AI-powered automation.</p>
-      <a href="https://github.com/bmentoy/Aroma-Free-Movies" target="_blank">View on GitHub</a>
+      <p data-i18n="project-aroma-text">A free movie streaming website built using <b>HTML, CSS, and JavaScript</b>. Now integrating AI-powered automation.</p>
+      <a href="https://github.com/bmentoy/Aroma-Free-Movies" target="_blank" data-i18n="project-aroma-link">View on GitHub</a>
     </div>
     <div class="project-card">
-      <h3>Foundation Design & Estimation</h3>
+      <h3 data-i18n="project-foundation-title">Foundation Design & Estimation</h3>
       <div class="project-image">
         <img src="images/Foundation design systems.jpg" alt="Foundation design" loading="lazy">
       </div>
-      <p>Designed structural foundations at <b>Kulekhani III Hydropower Project</b> during OJT, focusing on cost estimation.</p>
+      <p data-i18n="project-foundation-text">Designed structural foundations at <b>Kulekhani III Hydropower Project</b> during OJT, focusing on cost estimation.</p>
     </div>
     <div class="project-card">
-      <h3>Structural Analysis & Design</h3>
+      <h3 data-i18n="project-structural-title">Structural Analysis & Design</h3>
       <div class="project-image">
         <img src="images/Structural design.webp" alt="Structural design" loading="lazy">
       </div>
-      <p>Optimized building structures using <b>AutoCAD, SAP2000, and Revit</b> during internship.</p>
+      <p data-i18n="project-structural-text">Optimized building structures using <b>AutoCAD, SAP2000, and Revit</b> during internship.</p>
     </div>
     <div class="project-card">
-      <h3>Portfolio Website</h3>
+      <h3 data-i18n="project-portfolio-title">Portfolio Website</h3>
       <div class="project-image">
         <img src="images/Portfolio Website Screenshot.png" alt="Portfolio Website" loading="lazy">
       </div>
-      <p>A modern, interactive portfolio showcasing my skills, projects, and experience using <b>HTML, CSS, JS</b>.</p>
+      <p data-i18n="project-portfolio-text">A modern, interactive portfolio showcasing my skills, projects, and experience using <b>HTML, CSS, JS</b>.</p>
     </div>
   </section>
 
@@ -74,15 +79,15 @@
   <div id="aroma-modal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('aroma-modal')">×</span>
-      <h3>Aroma Free Movie Website</h3>
-      <p>Built with HTML, CSS, and JavaScript. Currently enhancing with AI automation for content curation.</p>
-      <a href="https://bmentoy.github.io/Aroma-Free-Movies/" target="_blank">Live Demo</a>
+      <h3 data-i18n="project-aroma-title">Aroma Free Movie Website</h3>
+      <p data-i18n="project-aroma-modal-text">Built with HTML, CSS, and JavaScript. Currently enhancing with AI automation for content curation.</p>
+      <a href="https://bmentoy.github.io/Aroma-Free-Movies/" target="_blank" data-i18n="project-aroma-modal-link">Live Demo</a>
     </div>
   </div>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Pabitra Bhatta</p>
+    <p data-i18n="footer-copyright">© 2025 Pabitra Bhatta</p>
   </footer>
 
   <!-- Scroll-to-Top -->
