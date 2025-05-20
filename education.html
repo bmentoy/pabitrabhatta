@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pabitra Bhatta - Aspiring Civil Engineer & Web Developer">
+  <meta name="keywords" content="Civil Engineering, Web Development, AI, Portfolio">
+  <title data-i18n="title-education">Pabitra Bhatta - Education</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-title">
+          <h1 data-i18n="header-name">Pabitra Bhatta</h1>
+          <p data-i18n="header-subtitle">Aspiring Civil Engineer & Web Developer | Innovating with AI and Design</p>
+        </div>
+        <div class="header-controls">
+          <select id="language-switcher">
+            <option value="en" data-i18n="lang-en">English</option>
+            <option value="ne" data-i18n="lang-ne">Nepali</option>
+            <option value="hi" data-i18n="lang-hi">Hindi</option>
+          </select>
+          <button id="theme-toggle" data-i18n="theme-dark">Dark Mode🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <div class="icon-bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div class="nav-content">
+        <ul id="nav-links">
+          <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav-about">About</a></li>
+          <li><a href="education.html" data-i18n="nav-education">Education</a></li>
+          <li><a href="skills.html" data-i18n="nav-skills">Skills</a></li>
+          <li><a href="projects.html" data-i18n="nav-projects">Projects</a></li>
+          <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Education Section -->
+    <section class="education">
+      <div class="container">
+        <h2 data-i18n="education-title">My Educational Journey</h2>
+        <div class="timeline">
+          <div class="timeline-item animate-on-scroll left">
+            <div class="timeline-content">
+              <div class="timeline-content-header">
+                <span class="timeline-card-icon"><i class="fas fa-school"></i></span>
+                <h3 data-i18n="education-highschool-title">High School (2019-2021)</h3>
+              </div>
+              <p data-i18n="education-highschool-gpa"><strong>GPA:</strong> 3.4 (10th), 3.43 (11th), 3.47 (12th)</p>
+              <p data-i18n="education-highschool-text">Built a strong foundation in Mathematics, Physics, and Engineering.</p>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll right">
+            <div class="timeline-content">
+              <div class="timeline-content-header">
+                <span class="timeline-card-icon"><i class="fas fa-university"></i></span>
+                <h3 data-i18n="education-university-title">University Applications (2024)</h3>
+              </div>
+              <p data-i18n="education-university-text">Accepted to top U.S. universities for Civil Engineering:</p>
+              <ul>
+                <li data-i18n="education-university-1">LA TECH University</li>
+                <li data-i18n="education-university-2">University of Texas at Arlington</li>
+                <li data-i18n="education-university-3">Iowa State University ($5,500 scholarship)</li>
+                <li data-i18n="education-university-4">Youngstown State University</li>
+                <li data-i18n="education-university-5">South Illinois University Edwardsville</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll left">
+            <div class="timeline-content">
+              <div class="timeline-content-header">
+                 <span class="timeline-card-icon"><i class="fas fa-briefcase"></i></span>
+                <h3 data-i18n="education-internships-title">Internships & Training (2023-2024)</h3>
+              </div>
+              <p data-i18n="education-internship-1"><strong>Kulekhani III Hydropower Project:</strong> Focused on foundation design and estimation.</p>
+              <p data-i18n="education-internship-2"><strong>Ace Engineering Consultancy:</strong> Contributed to construction project planning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- AI Assistant Chat Button & Window -->
+  <button id="ai-chat-toggle-btn" data-i18n-aria="ai-chat-toggle-label" aria-label="Open AI Assistant">
+      <i class="fas fa-robot"></i>
+  </button>
+  <div id="ai-chat-window" class="ai-chat-window" role="dialog" aria-modal="true" aria-labelledby="ai-chat-widget-title">
+      <div class="ai-chat-header">
+          <span id="ai-chat-widget-title" data-i18n="ai-chat-title">AI Assistant</span>
+          <button id="ai-chat-close-btn" data-i18n-aria="ai-chat-close-label" aria-label="Close AI Assistant">×</button>
+      </div>
+      <div id="ai-chat-messages" class="ai-chat-messages" aria-live="polite">
+          <!-- Messages will appear here -->
+      </div>
+      <div class="ai-chat-input-area">
+          <input type="text" id="ai-chat-input" data-i18n-placeholder="ai-chat-placeholder" placeholder="Ask about Pabitra...">
+          <button id="ai-chat-send-btn" data-i18n="ai-chat-send">Send</button>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+        <p data-i18n="footer-copyright">© 2025 Pabitra Bhatta</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top -->
+  <button id="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

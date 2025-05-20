@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pabitra Bhatta - Aspiring Civil Engineer & Web Developer">
+  <meta name="keywords" content="Civil Engineering, Web Development, AI, Portfolio">
+  <title data-i18n="title-contact">Pabitra Bhatta - Contact</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-title">
+          <h1 data-i18n="header-name">Pabitra Bhatta</h1>
+          <p data-i18n="header-subtitle">Aspiring Civil Engineer & Web Developer | Innovating with AI and Design</p>
+        </div>
+        <div class="header-controls">
+          <select id="language-switcher">
+            <option value="en" data-i18n="lang-en">English</option>
+            <option value="ne" data-i18n="lang-ne">Nepali</option>
+            <option value="hi" data-i18n="lang-hi">Hindi</option>
+          </select>
+          <button id="theme-toggle" data-i18n="theme-dark">Dark Mode🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <div class="icon-bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div class="nav-content">
+        <ul id="nav-links">
+          <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav-about">About</a></li>
+          <li><a href="education.html" data-i18n="nav-education">Education</a></li>
+          <li><a href="skills.html" data-i18n="nav-skills">Skills</a></li>
+          <li><a href="projects.html" data-i18n="nav-projects">Projects</a></li>
+          <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="container">
+        <h2 data-i18n="contact-title">Let's Work Together!</h2>
+        
+        <h3 data-i18n="contact-form-title" style="text-align:center;">Get in Touch</h3>
+        <form class="contact-form" action="https://formsubmit.co/pabitrabhattaisonly1@gmail.com" method="POST">
+          <input type="text" name="name" data-i18n-placeholder="contact-name-placeholder" placeholder="Your Name" required aria-label="Your name">
+          <input type="email" name="email" data-i18n-placeholder="contact-email-placeholder" placeholder="Your Email" required aria-label="Your email">
+          <textarea name="message" data-i18n-placeholder="contact-message-placeholder" placeholder="Your Message" required aria-label="Your message"></textarea>
+          <button type="submit" data-i18n="contact-submit" aria-label="Send message">Send Message</button>
+        </form>
+        
+        <h3 data-i18n="contact-social-title" style="text-align:center; margin-top: 2rem;">My Social Media Handles</h3>
+        <div class="social-links">
+          <p data-i18n="contact-social-text">Get connected on social media</p>
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/pabitra-bhatta" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/bmentoy" target="_blank" class="social-icon github" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://facebook.com/aryan.bhatta.00" target="_blank" class="social-icon facebook" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/aryan_bhatta_18" target="_blank" class="social-icon instagram" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        
+        <h3 data-i18n="contact-subscribe-title" style="text-align:center; margin-top: 2rem;">Subscribe for Updates</h3>
+        <div class="subscribe-form">
+          <form action="https://formsubmit.co/pabitrabhattaisonly1@gmail.com" method="POST">
+            <input type="email" name="email" data-i18n-placeholder="contact-subscribe-placeholder" placeholder="Enter your email" required aria-label="Your email for subscription">
+            <button type="submit" data-i18n="contact-subscribe-button" aria-label="Subscribe">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- AI Assistant Chat Button & Window -->
+  <button id="ai-chat-toggle-btn" data-i18n-aria="ai-chat-toggle-label" aria-label="Open AI Assistant">
+      <i class="fas fa-robot"></i>
+  </button>
+  <div id="ai-chat-window" class="ai-chat-window" role="dialog" aria-modal="true" aria-labelledby="ai-chat-widget-title">
+      <div class="ai-chat-header">
+          <span id="ai-chat-widget-title" data-i18n="ai-chat-title">AI Assistant</span>
+          <button id="ai-chat-close-btn" data-i18n-aria="ai-chat-close-label" aria-label="Close AI Assistant">×</button>
+      </div>
+      <div id="ai-chat-messages" class="ai-chat-messages" aria-live="polite">
+          <!-- Messages will appear here -->
+      </div>
+      <div class="ai-chat-input-area">
+          <input type="text" id="ai-chat-input" data-i18n-placeholder="ai-chat-placeholder" placeholder="Ask about Pabitra...">
+          <button id="ai-chat-send-btn" data-i18n="ai-chat-send">Send</button>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+        <p data-i18n="footer-copyright">© 2025 Pabitra Bhatta</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top -->
+  <button id="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

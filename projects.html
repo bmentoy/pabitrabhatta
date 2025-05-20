@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pabitra Bhatta - Aspiring Civil Engineer & Web Developer">
+  <meta name="keywords" content="Civil Engineering, Web Development, AI, Portfolio">
+  <title data-i18n="title-projects">Pabitra Bhatta - Projects</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-title">
+          <h1 data-i18n="header-name">Pabitra Bhatta</h1>
+          <p data-i18n="header-subtitle">Aspiring Civil Engineer & Web Developer | Innovating with AI and Design</p>
+        </div>
+        <div class="header-controls">
+          <select id="language-switcher">
+            <option value="en" data-i18n="lang-en">English</option>
+            <option value="ne" data-i18n="lang-ne">Nepali</option>
+            <option value="hi" data-i18n="lang-hi">Hindi</option>
+          </select>
+          <button id="theme-toggle" data-i18n="theme-dark">Dark Mode🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <div class="icon-bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div class="nav-content">
+        <ul id="nav-links">
+          <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav-about">About</a></li>
+          <li><a href="education.html" data-i18n="nav-education">Education</a></li>
+          <li><a href="skills.html" data-i18n="nav-skills">Skills</a></li>
+          <li><a href="projects.html" data-i18n="nav-projects">Projects</a></li>
+          <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Projects Section -->
+    <section class="projects">
+      <div class="container">
+        <h2 data-i18n="projects-title">My Projects</h2>
+        <!-- You might want a grid or flex container here for project cards -->
+        <div class="project-card animate-on-scroll" onclick="openModal('aroma-modal')">
+          <h3 data-i18n="project-aroma-title">Aroma Free Movie Website</h3>
+          <div class="project-image">
+            <img src="images/Aroma Free Movies Screenshot.png" alt="Aroma Free Movie Screenshot" loading="lazy">
+          </div>
+          <p data-i18n="project-aroma-text">A free movie streaming website built using <b>HTML, CSS, and JavaScript</b>. Now integrating AI-powered automation.</p>
+          <a href="https://github.com/bmentoy/Aroma-Free-Movies" target="_blank" class="card-link" data-i18n="project-aroma-link">View on GitHub</a>
+        </div>
+        <div class="project-card animate-on-scroll">
+          <h3 data-i18n="project-foundation-title">Foundation Design & Estimation</h3>
+          <div class="project-image">
+            <img src="images/Foundation design systems.jpg" alt="Foundation design" loading="lazy">
+          </div>
+          <p data-i18n="project-foundation-text">Designed structural foundations at <b>Kulekhani III Hydropower Project</b> during OJT, focusing on cost estimation.</p>
+        </div>
+        <div class="project-card animate-on-scroll">
+          <h3 data-i18n="project-structural-title">Structural Analysis & Design</h3>
+          <div class="project-image">
+            <img src="images/Structural design.webp" alt="Structural design" loading="lazy">
+          </div>
+          <p data-i18n="project-structural-text">Optimized building structures using <b>AutoCAD, SAP2000, and Revit</b> during internship.</p>
+        </div>
+        <div class="project-card animate-on-scroll">
+          <h3 data-i18n="project-portfolio-title">Portfolio Website</h3>
+          <div class="project-image">
+            <img src="images/Portfolio Website Screenshot.png" alt="Portfolio Website" loading="lazy">
+          </div>
+          <p data-i18n="project-portfolio-text">A modern, interactive portfolio showcasing my skills, projects, and experience using <b>HTML, CSS, JS</b>.</p>
+           <a href="https://github.com/bmentoy/Portfolio" target="_blank" class="card-link">View on GitHub</a> <!-- Example Link -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="aroma-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal-btn" onclick="closeModal('aroma-modal')" aria-label="Close modal">×</span>
+      <h3 data-i18n="project-aroma-title">Aroma Free Movie Website</h3>
+      <p data-i18n="project-aroma-modal-text">Built with HTML, CSS, and JavaScript. Currently enhancing with AI automation for content curation.</p>
+      <a href="https://bmentoy.github.io/Aroma-Free-Movies/" target="_blank" class="cta-button" data-i18n="project-aroma-modal-link">Live Demo</a>
+    </div>
+  </div>
+
+  <!-- AI Assistant Chat Button & Window -->
+  <button id="ai-chat-toggle-btn" data-i18n-aria="ai-chat-toggle-label" aria-label="Open AI Assistant">
+      <i class="fas fa-robot"></i>
+  </button>
+  <div id="ai-chat-window" class="ai-chat-window" role="dialog" aria-modal="true" aria-labelledby="ai-chat-widget-title">
+      <div class="ai-chat-header">
+          <span id="ai-chat-widget-title" data-i18n="ai-chat-title">AI Assistant</span>
+          <button id="ai-chat-close-btn" data-i18n-aria="ai-chat-close-label" aria-label="Close AI Assistant">×</button>
+      </div>
+      <div id="ai-chat-messages" class="ai-chat-messages" aria-live="polite">
+          <!-- Messages will appear here -->
+      </div>
+      <div class="ai-chat-input-area">
+          <input type="text" id="ai-chat-input" data-i18n-placeholder="ai-chat-placeholder" placeholder="Ask about Pabitra...">
+          <button id="ai-chat-send-btn" data-i18n="ai-chat-send">Send</button>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+        <p data-i18n="footer-copyright">© 2025 Pabitra Bhatta</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top -->
+  <button id="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Updated by JS -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pabitra Bhatta - Aspiring Civil Engineer & Web Developer Portfolio">
+  <meta name="keywords" content="Pabitra Bhatta, Civil Engineering, Web Development, AI, Portfolio, Nepal">
+  <!-- Title will be set by JS based on language and page -->
+  <title data-i18n="title-home">Pabitra Bhatta - Portfolio</title> 
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png"> <!-- Assuming PNG, update if JPEG -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome - ensure you have this link or your own setup -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body data-page-name="home"> <!-- Add data-page-name attribute -->
+
+  <!-- ===== Global Header ===== -->
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="header-title">
+        <h1 data-i18n="header-name">Pabitra Bhatta</h1>
+        <p data-i18n="header-subtitle">Aspiring Civil Engineer & Web Developer | Innovating with AI and Design</p>
+      </div>
+      <div class="header-controls">
+        <select id="language-switcher" aria-label="Select language">
+          <option value="en" data-i18n="lang-en">English</option>
+          <option value="ne" data-i18n="lang-ne">Nepali</option>
+          <option value="hi" data-i18n="lang-hi">Hindi</option>
+        </select>
+        <button id="theme-toggle" data-i18n="theme-dark-btn" aria-label="Toggle theme">Dark Mode🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Global Navigation ===== -->
+  <nav class="main-nav">
+    <div class="container nav-content">
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="icon-bars"> <!-- Container for actual bars -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <ul id="nav-links">
+        <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav-about">About</a></li>
+        <li><a href="education.html" data-i18n="nav-education">Education</a></li>
+        <li><a href="skills.html" data-i18n="nav-skills">Skills</a></li>
+        <li><a href="projects.html" data-i18n="nav-projects">Projects</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Main Content (Specific to each page) ===== -->
+  <main>
+    <div class="container"> <!-- Wrap main content in a container -->
+
+      <!-- Welcome Section for index.html -->
+      <section class="welcome">
+        <div class="welcome-card animate-on-scroll"> <!-- animate-on-scroll for observer -->
+          <div class="homepage-image">
+            <img src="images/IMG-20240401-WA0005.jpg" alt="Pabitra Bhatta" loading="lazy">
+          </div>
+          <h2 data-i18n="welcome-title">Welcome to My Portfolio</h2>
+          <p class="typewriter" data-i18n="welcome-text">I'm Pabitra Bhatta, 
+            <span class="typewriter-text" 
+                  data-phrases='["an Aspiring Civil Engineer", "a Web Developer", "an AI Enthusiast"]'
+                  data-typing-speed="80"
+                  data-deleting-speed="40"
+                  data-delay="2000"></span>
+          </p>
+          <a href="contact.html" class="cta-button" data-i18n="welcome-cta">Get in Touch</a>
+          <p data-i18n="welcome-scroll" style="margin-top: 1.5rem; font-size: 0.9em; opacity: 0.8;">Scroll down for more!</p>
+        </div>
+      </section>
+
+      <!-- Overview Section for index.html -->
+      <section class="overview">
+        <h2 data-i18n="overview-title">Explore My Work</h2>
+        <div class="overview-grid">
+          <div class="overview-card animate-on-scroll">
+            <div class="card-icon"><i class="fas fa-user"></i></div>
+            <h3 data-i18n="overview-about-title">About Me</h3>
+            <p data-i18n="overview-about-text">Learn about my journey in civil engineering and web development.</p>
+            <a href="about.html" class="card-link" data-i18n="overview-about-link">Discover More</a>
+          </div>
+          <div class="overview-card animate-on-scroll">
+            <div class="card-icon"><i class="fas fa-tools"></i></div>
+            <h3 data-i18n="overview-skills-title">Skills</h3>
+            <p data-i18n="overview-skills-text">Explore my technical expertise and creative abilities.</p>
+            <a href="skills.html" class="card-link" data-i18n="overview-skills-link">View Skills</a>
+          </div>
+          <div class="overview-card animate-on-scroll">
+            <div class="card-icon"><i class="fas fa-folder-open"></i></div>
+            <h3 data-i18n="overview-projects-title">Projects</h3>
+            <p data-i18n="overview-projects-text">Check out my engineering and coding projects.</p>
+            <a href="projects.html" class="card-link" data-i18n="overview-projects-link">See Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section for index.html -->
+      <section class="testimonials">
+        <h2 data-i18n="testimonials-title">Testimonials</h2>
+        <div class="testimonial-card animate-on-scroll">
+          <blockquote data-i18n="testimonial-1">"Pabitra’s dedication to engineering and tech is inspiring." - Prof. Jane Smith</blockquote>
+        </div>
+      </section>
+      
+    </div> <!-- End .container for main content -->
+  </main>
+
+  <!-- ===== Global Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footer-copyright">© 2025 Pabitra Bhatta</p>
+    </div>
+  </footer>
+
+  <!-- ===== Global Utilities (Scroll-to-top, AI Assistant) ===== -->
+  <button id="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top" style="display: none;">↑</button>
+
+  <!-- AI Assistant Chat Button & Window -->
+  <button id="ai-chat-toggle-btn" data-i18n-aria="ai-chat-toggle-label" aria-label="Open AI Assistant">
+      <i class="fas fa-robot"></i>
+  </button>
+  <div id="ai-chat-window" class="ai-chat-window" role="dialog" aria-modal="true" aria-labelledby="ai-chat-widget-title">
+      <div class="ai-chat-header">
+          <span id="ai-chat-widget-title" data-i18n="ai-chat-title">AI Assistant</span>
+          <button id="ai-chat-close-btn" data-i18n-aria="ai-chat-close-label" aria-label="Close AI Assistant">&times;</button>
+      </div>
+      <div id="ai-chat-messages" class="ai-chat-messages" aria-live="polite">
+          <!-- Messages will appear here -->
+      </div>
+      <div class="ai-chat-input-area">
+          <input type="text" id="ai-chat-input" data-i18n-placeholder="ai-chat-placeholder" placeholder="Ask about Pabitra...">
+          <button id="ai-chat-send-btn" data-i18n="ai-chat-send">Send</button>
+      </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="ai-assistant.js"></script> 
+
+</body>
+</html>

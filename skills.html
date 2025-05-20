@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pabitra Bhatta - Aspiring Civil Engineer & Web Developer">
+  <meta name="keywords" content="Civil Engineering, Web Development, AI, Portfolio">
+  <title data-i18n="title-skills">Pabitra Bhatta - Skills</title>
+  <link rel="icon" type="image/jpeg" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-title">
+          <h1 data-i18n="header-name">Pabitra Bhatta</h1>
+          <p data-i18n="header-subtitle">Aspiring Civil Engineer & Web Developer | Innovating with AI and Design</p>
+        </div>
+        <div class="header-controls">
+          <select id="language-switcher">
+            <option value="en" data-i18n="lang-en">English</option>
+            <option value="ne" data-i18n="lang-ne">Nepali</option>
+            <option value="hi" data-i18n="lang-hi">Hindi</option>
+          </select>
+          <button id="theme-toggle" data-i18n="theme-dark">Dark Mode🌙</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <div class="icon-bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div class="nav-content">
+        <ul id="nav-links">
+          <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav-about">About</a></li>
+          <li><a href="education.html" data-i18n="nav-education">Education</a></li>
+          <li><a href="skills.html" data-i18n="nav-skills">Skills</a></li>
+          <li><a href="projects.html" data-i18n="nav-projects">Projects</a></li>
+          <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Skills Section -->
+    <section class="skills">
+      <div class="container">
+        <h2 data-i18n="skills-title">My Skills</h2>
+
+        <h3 data-i18n="skills-technical-title">Technical Skills</h3>
+        <div class="circle-skill">
+          <div class="circle-container animate-on-scroll" data-percent="75">
+            <svg width="200" height="200" viewBox="0 0 160 160"> <!-- Adjusted viewBox for new sizes in CSS -->
+              <circle class="circle-bg" cx="80" cy="80" r="70"></circle>
+              <circle class="circle-progress" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div class="skill-label">
+              <i class="fas fa-drafting-compass"></i>
+              <span data-i18n="skill-autocad">AutoCAD</span>
+            </div>
+          </div>
+          <div class="circle-container animate-on-scroll" data-percent="70">
+            <svg width="200" height="200" viewBox="0 0 160 160">
+              <circle class="circle-bg" cx="80" cy="80" r="70"></circle>
+              <circle class="circle-progress" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div class="skill-label">
+              <i class="fas fa-calculator"></i>
+              <span data-i18n="skill-estimating">Estimating</span>
+            </div>
+          </div>
+          <div class="circle-container animate-on-scroll" data-percent="65">
+            <svg width="200" height="200" viewBox="0 0 160 160">
+              <circle class="circle-bg" cx="80" cy="80" r="70"></circle>
+              <circle class="circle-progress" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div class="skill-label">
+              <i class="fas fa-map"></i>
+              <span data-i18n="skill-surveying">Surveying</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 data-i18n="skills-coding-title">Coding Skills</h3>
+        <div class="circle-skill">
+          <div class="circle-container animate-on-scroll" data-percent="80">
+            <svg width="200" height="200" viewBox="0 0 160 160">
+              <circle class="circle-bg" cx="80" cy="80" r="70"></circle>
+              <circle class="circle-progress" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div class="skill-label">
+              <i class="fas fa-code"></i>
+              <span data-i18n="skill-html">HTML</span>
+            </div>
+          </div>
+          <div class="circle-container animate-on-scroll" data-percent="70">
+            <svg width="200" height="200" viewBox="0 0 160 160">
+              <circle class="circle-bg" cx="80" cy="80" r="70"></circle>
+              <circle class="circle-progress" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div class="skill-label">
+              <i class="fas fa-paint-brush"></i>
+              <span data-i18n="skill-css">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 data-i18n="skills-life-title">Practical Life Skills</h3>
+        <div class="circle-skill">
+          <div class="circle-container animate-on-scroll" data-percent="85">
+            <svg width="200" height="200" viewBox="0 0 160 160">
+              <circle class="circle-bg" cx="80" cy="80" r="70"></circle>
+              <circle class="circle-progress" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div class="skill-label">
+              <i class="fas fa-comments"></i>
+              <span data-i18n="skill-communication">Communication</span>
+            </div>
+          </div>
+          <div class="circle-container animate-on-scroll" data-percent="80">
+            <svg width="200" height="200" viewBox="0 0 160 160">
+              <circle class="circle-bg" cx="80" cy="80" r="70"></circle>
+              <circle class="circle-progress" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div class="skill-label">
+              <i class="fas fa-lightbulb"></i>
+              <span data-i18n="skill-problem-solving">Problem-Solving</span>
+            </div>
+          </div>
+          <div class="circle-container animate-on-scroll" data-percent="90">
+            <svg width="200" height="200" viewBox="0 0 160 160">
+              <circle class="circle-bg" cx="80" cy="80" r="70"></circle>
+              <circle class="circle-progress" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div class="skill-label">
+              <i class="fas fa-hammer"></i>
+              <span data-i18n="skill-hardworking">Hardworking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- AI Assistant Chat Button & Window -->
+  <button id="ai-chat-toggle-btn" data-i18n-aria="ai-chat-toggle-label" aria-label="Open AI Assistant">
+      <i class="fas fa-robot"></i>
+  </button>
+  <div id="ai-chat-window" class="ai-chat-window" role="dialog" aria-modal="true" aria-labelledby="ai-chat-widget-title">
+      <div class="ai-chat-header">
+          <span id="ai-chat-widget-title" data-i18n="ai-chat-title">AI Assistant</span>
+          <button id="ai-chat-close-btn" data-i18n-aria="ai-chat-close-label" aria-label="Close AI Assistant">×</button>
+      </div>
+      <div id="ai-chat-messages" class="ai-chat-messages" aria-live="polite">
+          <!-- Messages will appear here -->
+      </div>
+      <div class="ai-chat-input-area">
+          <input type="text" id="ai-chat-input" data-i18n-placeholder="ai-chat-placeholder" placeholder="Ask about Pabitra...">
+          <button id="ai-chat-send-btn" data-i18n="ai-chat-send">Send</button>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+        <p data-i18n="footer-copyright">© 2025 Pabitra Bhatta</p>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top -->
+  <button id="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
